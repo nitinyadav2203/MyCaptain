@@ -28,13 +28,13 @@ void main()
                    printf("\n\t=:Book %d Detail:=\n",i+1);
  
                    printf("\n\tEnter the Book title: ");
-                   scanf("%s",b[i].title);
+                   scanf("%s[^\n]",b[i].title);
  
                    printf("\tEnter the Author of Book: ");
-                   scanf("%s",b[i].author);
+                   scanf("%[^\n]s",b[i].author);
  
                    printf("\tEnter the Genre of Book: ");
-                   scanf("%s",&b[i].genre);
+                   scanf("%[^\n]s",&b[i].genre);
  
                    
           }
